@@ -1,0 +1,20 @@
+.DS_Store
+#*#
+.#*
+*~
+
+target/
+build/
+out/
+.gradle/
+
+# Eclipse Setting Files
+.classpath
+.project
+.settings/
+
+# IntelliJ Setting Files
+*.iml
+*.iws
+*.ipr
+.idea/

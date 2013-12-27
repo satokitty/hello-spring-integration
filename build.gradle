@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+sourceCompatibility = targetCompatibility = 1.6
+
+tasks.withType(AbstractCompile) each { it.options.encoding = 'UTF-8'}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile "org.springframework.integration:spring-integration-core:$springIntegrationVersion"
+    testCompile "junit:junit-dep:$junitVersion",
+                "org.springframework:spring-test:$springFrameworkVersion"
+}
